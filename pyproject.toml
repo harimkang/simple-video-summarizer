@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-video-summarizer"
+version = "0.1.0"
+description = "A YouTube video summarizer application using PyQt6 and Langchain."
+authors = [
+    { name = "Harim Kang", email = "harimkang4422@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PyQt6==6.7.1",
+    "langchain==0.3.9",
+    "langchain-community==0.3.8",
+    "langchain-core==0.3.21",
+    "youtube-transcript-api==0.6.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/harimkang/simple-video-summarizer"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["youtube_summary"]
